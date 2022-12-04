@@ -33,11 +33,13 @@ module.exports = {
        },
        animation: {
         'spin-slow': 'spin 50s linear infinite',
+        'spin-slow-reverse': 'spin 50s linear reverse infinite',
         'bounce-slow': 'bounce 3s infinite'
        },
        borderRadius: {
         '4xl': '2.25rem'
-       }
+       },
+
     },
   },
   plugins: [],

@@ -32,13 +32,13 @@ const navLinks = [
 export default function Navbar() {
   return (
     <nav className="flex mx-8 my-4 items-center">
-      <div className="grow">
+      <div className="grow flex justify-center lg:justify-start">
           <LogoSvg />
       </div>
       <ul className="gap-6 text-3xl items-center hidden lg:flex">
         {navLinks.map(link => (
           <li>
-            <Link href={link.href} className={styles.link}>{link.title}</Link>
+            <Link key={link.title} href={link.href} className={styles.link}>{link.title}</Link>
           </li>
         ))}
         <li>
