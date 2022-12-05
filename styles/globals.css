@@ -6,17 +6,10 @@
 @tailwind utilities;
 
 
+
+
 @layer base {
-  @font-face {
-    font-family: NostromoOutline;
-    font-weight: bold;
-    src: url('./fonts/NostromoOutline-Bold.otf') format("opentype");
-  }
-  @font-face {
-    font-family: FuturaPtBold;
-    font-weight: bold;
-    src: url('./fonts/FuturaPTBold.otf') format("opentype");
-  }
+  
 }
 
 @layer components {
