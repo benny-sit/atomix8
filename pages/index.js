@@ -27,7 +27,6 @@ export default function Home() {
         <Rarity />
         <Roadmap />
         <OurTeam />
-        <div className='h-96'></div>
         <MarqueeFooter />
       </div>
     </DefaultLayout>

@@ -22,7 +22,7 @@
 @layer components {
   /* TEXT SIZES */
   .home-title {
-    @apply lg:text-[80px] text-4xl leading-[82px];
+    @apply lg:text-[80px] text-5xl leading-[82px];
   }
 
 }

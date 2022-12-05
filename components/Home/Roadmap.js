@@ -1,5 +1,6 @@
 import React from 'react'
 import Bg from '@public/home/RoadmapBg.svg'
+import Octas7 from '@public/home/Polygons7Small.svg'
 
 const goals = [
   {
@@ -26,11 +27,12 @@ const goals = [
 
 export default function Roadmap() {
   return (
-    <section className='flex flex-col items-center mb-48'>
+    <section className='flex flex-col relative items-center  md:mb-48'>
+        <Octas7 className='absolute right-0 bottom-0 translate-x-1/3 translate-y-full'/>
         <div className='home-title font-BebasNeue text-second-heavy mb-12'>
           ROADMAP
         </div>
-        <div className='flex'>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
         {
           goals.map(goal => (
             <div className='flex flex-col justify-center'>

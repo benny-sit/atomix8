@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import Link from 'next/link'
 import PolySm from '@public/home/polySm.svg'
@@ -11,6 +11,20 @@ import OctaSm from '@public/home/octaSm.svg'
 import {BsChevronDown, BsTwitter} from 'react-icons/bs'
 
 export default function Hero() {
+  const bearRef = useRef();
+  const [bearVisible, setBearVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const bear = entries[0];
+      if (bear.isIntersecting) {
+        setBearVisible(true);
+        observer.disconnect();
+      }
+    })
+    observer.observe(bearRef.current)
+  }, [])
+
   return (
     <section className='flex flex-col-reverse lg:flex-row-reverse  lg:py-24 lg:mb-12 lg:mt-28  relative mx-4 z-0'>
         {/* ABSOLUTE ELEMENTS */}
@@ -36,7 +50,10 @@ export default function Hero() {
                     <PolySm className="absolute "/>
                     <PolyMd className="absolute"/>
                     <PolyLg className="absolute animate-spin-slow"/>
-                    <Bear className="absolute -translate-x-[70px] -translate-y-[32px]"/>
+                    <div ref={bearRef} className='absolute -translate-y-[32px] -translate-x-[70px]'>
+
+                    <Bear  className={`relative transition-all ease-out duration-1000 ${bearVisible ? 'translate-x-0' : '-translate-x-14'}`}/>
+                    </div>
                 </div>
             </div>
         </div>

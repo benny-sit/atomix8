@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState, useEffect} from 'react'
 import PolySm from '@public/home/polySm.svg'
 import PolyMd from '@public/home/polyMd.svg'
 import PolyLg from '@public/home/polyLg.svg'
@@ -8,6 +8,22 @@ import PolyBlueBg from '@public/home/blueBgPoly.svg'
 import Octagons from '@public/home/Polygons7Small.svg'
 
 export default function HeroSecond() {
+    const wolfRef = useRef();
+  const [sectionVisible, setSectionVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const wolf = entries[0];
+      if (wolf.isIntersecting) {
+        setSectionVisible(true);
+        observer.unobserve(wolf.target);
+      }
+
+    }, {
+        threshold: 0.5,
+    })
+    observer.observe(wolfRef.current)
+  }, [])
   return (
     <section className='flex flex-col -top-44 lg:top-0 md:flex-row relative items-center justify-between mb-0  lg:mb-96'>
         <PolysShot className="absolute rotate-180 -z-0 -top-80 -right-44"/>
@@ -19,7 +35,9 @@ export default function HeroSecond() {
                     <PolySm className="absolute "/>
                     <PolyMd className="absolute"/>
                     <PolyLg className="absolute animate-spin-slow-reverse"/>
-                    <Wolf className="absolute translate-x-[31px] -translate-y-[65px]"/>
+                    <div ref={wolfRef} className="absolute translate-x-[31px] -translate-y-[65px]">
+                        <Wolf className={`relative transition-all duration-1000 ease-out ${sectionVisible ? 'translate-x-0' : 'translate-x-14'}`}/>
+                    </div>
                 </div>
             </div>
         </div>
