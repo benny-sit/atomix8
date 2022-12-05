@@ -70,7 +70,7 @@ export default function Hero() {
                   GAMING!
                 </div>
             </div>
-            <a href='https://twitter.com/PlayAtomix8' className='text-twitter-blue flex gap-7 items-center mt-8 z-10 drop-shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] w-fit px-10 py-3 backdrop-blur-3xl rounded-4xl main-button'>
+            <a href='https://twitter.com/PlayAtomix8' className='text-twitter-blue flex gap-7 items-center mt-8 z-10 w-fit px-10 py-3 backdrop-blur-3xl rounded-4xl main-button'>
               <BsTwitter className='w-[50px] h-[50px]'/>
               <span className='font-FuturaPtBold text-2xl'>
                 Follow us on Twitter
