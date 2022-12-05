@@ -25,7 +25,7 @@ export default function OurTeam() {
         <div className='flex flex-col items-center md:ml-12 mb-6'>
           <BearFull />
           <div className='font-bold text-3xl mt-6'>
-              Itamar Dvit
+              Itamar Dvir
           </div>
           <div>
               Founder & CEO
