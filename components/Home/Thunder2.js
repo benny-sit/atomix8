@@ -8,7 +8,7 @@ import Octas7 from '@public/home/Polygons7Small.svg'
 
 export default function Thunder2() {
   return (
-    <section className="flex justify-center self-center items-center relative lg:h-[1000px] h-[750px]">
+    <section className="flex justify-center self-center items-center relative lg:h-[1000px] h-[750px]" id="thunder2">
       <CoinBg className="absolute opacity-25 left-44 top-28 rotate-90 scale-75 lg:scale-100"/>
       <CoinBg className="absolute opacity-25 -bottom-40 lg:-bottom-40 translate-x-40 md:translate-x-80 lg:translate-x-[700px] xl:translate-x-[1000px] scale-50  lg:scale-100"/>
       <Octas7 className="absolute xl:-bottom-64 bottom-24 -translate-x-3/4 lg:-translate-x-full xl:-translate-x-[160%] scale-75 lg:scale-100"/>

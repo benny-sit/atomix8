@@ -12,7 +12,7 @@ import Bombs from './Bombs'
 
 export default function Thunder1() {
   return (
-    <section className=' flex justify-center self-center items-center relative mt-9 z-10'>
+    <section className=' flex justify-center self-center items-center relative mt-9 z-10' id='thunder1'>
             <Thunder className="relative -translate-x-16 z-0 " />
             <PolysBlue className="absolute -translate-y-14 right-80"/>
             <PolysOrange className="absolute -top-0 lg:-top-24 -translate-x-56 lg:-translate-x-96 scale-50 lg:scale-100"/>

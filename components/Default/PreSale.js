@@ -9,7 +9,7 @@ const oneText = () => (
 
 export default function PreSale() {
   return (
-    <div className="flex items-center w-full presale-gradient z-10">
+    <div className="flex items-center w-full presale-gradient z-10 h-[60px]">
         <Marquee gradient={false} speed={10}>
           {oneText()}
           {oneText()}

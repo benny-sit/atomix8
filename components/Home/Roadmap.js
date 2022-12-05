@@ -27,7 +27,7 @@ const goals = [
 
 export default function Roadmap() {
   return (
-    <section className='flex flex-col relative items-center  md:mb-48'>
+    <section className='flex flex-col relative items-center  md:mb-48' id='roadmap'>
         <Octas7 className='absolute right-0 bottom-0 translate-x-1/3 translate-y-full'/>
         <div className='home-title font-BebasNeue text-second-heavy mb-12'>
           ROADMAP

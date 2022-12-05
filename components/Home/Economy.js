@@ -7,7 +7,7 @@ import CoinBg from '@public/home/coinBackHeavyLg.svg'
 
 export default function Economy() {
   return (
-    <section className='flex justify-center relative lg:mt-32 mt-0 lg:mb-24 '>
+    <section className='flex justify-center relative lg:mt-32 mt-0 lg:mb-24 ' id='economy'>
         <CoinBg className="absolute -right-[500px] -top-56 -z-0 opacity-25 scale-75 lg:scale-100"/>
         <Bits className="absolute lg:-right-12 lg:-top-56 -top-36 -right-28 md:-right-6 scale-50 lg:scale-100"/>
         <Coin className="absolute lg:-left-10 lg:-top-48 -left-44 -top-56 scale-50 lg:scale-100" />

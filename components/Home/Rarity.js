@@ -12,7 +12,7 @@ import styles from '@styles/Home/rarity.module.css'
 
 export default function Rarity() {
   return (
-    <section className='flex flex-col items-center relative md:mb-56 mb-20'>
+    <section className='flex flex-col items-center relative md:mb-56 mb-20' id='rarity'>
       <OctasGrey className="absolute opacity-30 lg:opacity-100 md:bottom-0 left-0 translate-y-1/2 scale-50 xl:scale-100"/>
       <OctasRed className="absolute opacity-30 lg:opacity-100 bottom-0 right-0 translate-y-1/2 translate-x-12 scale-50 xl:scale-100"/>
       <div className='home-title font-BebasNeue text-second-heavy mb-3 lg:mb-12'>

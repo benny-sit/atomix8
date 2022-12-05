@@ -25,15 +25,15 @@ export default function HeroSecond() {
     observer.observe(wolfRef.current)
   }, [])
   return (
-    <section className='flex flex-col -top-44 lg:top-0 md:flex-row relative items-center justify-between mb-0  lg:mb-96'>
+    <section className='flex flex-col -top-44 lg:top-0 md:flex-row relative items-center justify-between mb-0  lg:mb-96' id='hero2'>
         <PolysShot className="absolute rotate-180 -z-0 -top-80 -right-44"/>
         <Octagons className="absolute left-1/2 -translate-x-1/2 translate-y-1/2 lg:translate-y-full scale-75 lg:scale-100" />
         <div className="flex relative scale-50 lg:scale-100 h-40 w-[418px] self-start -top-32 lg:-top-12 z-10">
             <div id="hero-img-wrapper" className="absolute top-1/2 left-56">
                 <div id="hero-img" className='relative flex justify-center items-center -translate-x-44'>
                     <PolyBlueBg className="absolute"/>
-                    <PolySm className="absolute "/>
-                    <PolyMd className="absolute"/>
+                    <PolySm className="absolute animate-spin-30s-reverse"/>
+                    <PolyMd className="absolute animate-spin-slow-faster"/>
                     <PolyLg className="absolute animate-spin-slow-reverse"/>
                     <div ref={wolfRef} className="absolute translate-x-[31px] -translate-y-[65px]">
                         <Wolf className={`relative transition-all duration-1000 ease-out ${sectionVisible ? 'translate-x-0' : 'translate-x-14'}`}/>

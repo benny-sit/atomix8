@@ -8,7 +8,7 @@ import WolfFull from '@public/home/Characters/wolf.svg'
 
 export default function OurTeam() {
   return (
-    <section className='flex flex-col items-center mb-12 '>
+    <section className='flex flex-col items-center mb-12 ' id='team'>
       <div className='home-title mb-12 font-BebasNeue text-second-heavy relative'>
         OUR TEAM
       </div>

@@ -8,19 +8,19 @@ import {BsTwitter} from 'react-icons/bs'
 const navLinks = [
   {
     title: 'THE DOJO',
-    href: ''
+    href: '#thunder1'
   },
   {
     title: 'ECONOMY',
-    href: ''
+    href: '#economy'
   },
   {
     title: 'ROADMAP',
-    href: ''
+    href: '#roadmap'
   },
   {
     title: 'TEAM',
-    href: ''
+    href: '#team'
   },
   {
     title: 'WHITEPAPER',
@@ -42,7 +42,7 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <a href='https://www.twitter.com'>
+          <a href='https://twitter.com/PlayAtomix8'>
             <BsTwitter className='text-twitter-blue h-12 w-12'/>
           </a>
         </li>

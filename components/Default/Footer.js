@@ -23,7 +23,7 @@ export default function Footer() {
         Join to Atomix8 Community
       </span>
       <span>
-        <a href=''>
+        <a href='https://twitter.com/PlayAtomix8'>
           <BsTwitter className='text-twitter-blue h-28 w-28'/>
         </a>
       </span>
