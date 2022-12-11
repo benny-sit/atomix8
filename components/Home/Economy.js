@@ -7,20 +7,17 @@ import CoinBg from '@public/home/coinBackHeavyLg.svg'
 
 export default function Economy() {
   return (
-    <section className='flex justify-center relative lg:mt-32 mt-0 lg:mb-24 ' id='economy'>
-        <CoinBg className="absolute -right-[500px] -top-56 -z-0 opacity-25 scale-75 lg:scale-100"/>
+    <section className='flex justify-center relative -top-12 md:top-0 lg:mt-32 mt-0 lg:mb-20 ' id='economy'>
+        {/* <CoinBg className="absolute -right-[500px] -top-56 -z-0 opacity-25 scale-75 lg:scale-100"/>
         <Bits className="absolute lg:-right-12 lg:-top-56 -top-36 -right-28 md:-right-6 scale-50 lg:scale-100"/>
         <Coin className="absolute lg:-left-10 lg:-top-48 -left-44 -top-56 scale-50 lg:scale-100" />
-        <Coins className="absolute -rotate-[6deg] translate-x-12 -translate-y-8 lg:translate-y-12 scale-50 lg:scale-100"/>
-        <div className='text-center text-second-heavy relative flex flex-col gap-12'>
+        <Coins className="absolute -rotate-[6deg] translate-x-12 -translate-y-8 lg:translate-y-12 scale-50 lg:scale-100"/> */}
+        <div className='text-center text-second-heavy relative flex flex-col gap-3 lg:gap-12 px-5 md:px-10'>
             <div className='font-BebasNeue home-title'>
                 COMMUNITY DRIVEN ECONOMY
             </div>
-            <div className='font-roboto font-light lg:text-4xl lg:leading-[60px] leading-10 text-lg max-w-[1170px]'>
-                {/* <div>Our unique economy model is designed to serve the longevity of Atomix8</div>
-                <div>It is transparent, decentralized, and built with a long term view to create a unique</div>
-            <div>gaming experience.</div> */}
-                Our unique economy model is designed to serve the longevity of Atomix8
+            <div className='font-roboto font-light home-text lg:text-[35px] w-full max-w-[1240px]'>
+                Our unique economy model is designed to serve the longevity of Atomix8 <br/>
                 It is transparent, decentralized, and built with a long term view to create a unique gaming experience.
             </div>
         </div>

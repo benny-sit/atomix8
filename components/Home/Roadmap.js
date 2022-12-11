@@ -1,6 +1,7 @@
 import React from 'react'
 import Bg from '@public/home/RoadmapBg.svg'
 import Octas7 from '@public/home/Polygons7Small.svg'
+import Image from 'next/image'
 
 const goals = [
   {
@@ -10,7 +11,7 @@ const goals = [
   },
   {
     title: 'Q1 23',
-    text1: 'Pre-Sale',
+    text1: 'Whitelist Mint',
     text2: 'Soft Launch'
   },
   {
@@ -27,24 +28,24 @@ const goals = [
 
 export default function Roadmap() {
   return (
-    <section className='flex flex-col relative items-center  md:mb-48' id='roadmap'>
-        <Octas7 className='absolute right-0 bottom-0 translate-x-1/3 translate-y-full'/>
-        <div className='home-title font-BebasNeue text-second-heavy mb-12'>
+    <section className='flex flex-col relative items-center mb-12 lg:mb-48' id='roadmap'>
+        {/* <Octas7 className='absolute right-0 bottom-0 translate-x-1/3 translate-y-full z-0'/> */}
+        <div className='home-title font-BebasNeue text-second-heavy lg:mb-12'>
           ROADMAP
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
+        <div className='grid grid-cols-2 lg:grid-cols-4'>
         {
           goals.map(goal => (
             <div className='flex flex-col justify-center'>
-              <Bg className="" />
+              <Image src='/home/RoadmapBg.svg' width={337} height={338} className="lg:w-[337px]  w-[158px] "/>
               <div className='absolute self-center text-center'>
-                <div className='font-BebasNeue text-[64px] text-second-lite leading-[83px] mb-1'>
+                <div className='font-BebasNeue lg:text-[64px] text-2xl  lg:leading-[83px] text-second-lite  mb-1'>
                   {goal.title}
                 </div>
-                <div className='font-roboto text-second-heavy text-2xl leading-[33px] font-light'>
+                <div className='font-roboto text-second-heavy lg:text-2xl  lg:leading-[33px] text-xs leading-[14px] font-light'>
                   {goal.text1}
                 </div>
-                <div className='font-roboto text-second-heavy text-2xl leading-[33px] font-light'>
+                <div className='font-roboto text-second-heavy lg:text-2xl  lg:leading-[33px] text-xs leading-[14px] font-light'>
                   {goal.text2}
                 </div>
               </div>

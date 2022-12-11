@@ -17,8 +17,16 @@
 
 @layer components {
   /* TEXT SIZES */
-  .home-title {
-    @apply lg:text-[80px] text-5xl leading-[82px];
+  .home-title-xl{
+    @apply lg:text-[80px] text-[50px] lg:leading-[82px] leading-[51px];
+  }
+
+  .home-title{
+    @apply lg:text-[80px] text-[30px] lg:leading-[82px] leading-[31px] tracking-tight;
+  }
+
+  .home-text {
+    @apply lg:text-2xl text-xs lg:leading-[60px] leading-5;
   }
 
 }
@@ -52,6 +60,10 @@ background: linear-gradient(90deg, rgba(103,0,255,1) 16%, rgba(255,255,255,0.04)
     background: -webkit-linear-gradient(#00C8FF,#00FDE4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .title-resize {
+    font-size: clamp();
   }
 
 
