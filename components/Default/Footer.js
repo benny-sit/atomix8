@@ -30,7 +30,7 @@ export default function Footer() {
       <span className='font-medium lg:text-2xl text-[10px] leading-[13px]'>
         {footerLinks.map((link, idx) => (
           <>
-          <a key={link.title} href={link.href}>{link.title}</a> 
+          <a key={idx} href={link.href}>{link.title}</a> 
           {idx != footerLinks.length - 1 ?  " - " : ''}
           </>
         ))}

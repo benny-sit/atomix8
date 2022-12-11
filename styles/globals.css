@@ -29,6 +29,10 @@
     @apply lg:text-2xl text-xs lg:leading-[60px] leading-5;
   }
 
+  .mobile-hidden {
+    @apply hidden lg:block;
+  }
+
 }
 
 @layer utilities {

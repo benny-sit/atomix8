@@ -28,7 +28,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className='flex flex-col lg:flex-row-reverse  lg:py-24 lg:mb-12 lg:mt-28  relative mx-4 z-0 gap-4 -translate-y-8' id='hero1'>
+    <section className='flex flex-col lg:flex-row-reverse  lg:py-24 lg:mb-12 lg:mt-28  relative mx-4 z-0 gap-4 ' id='hero1'>
         {/* ABSOLUTE ELEMENTS */}
         
         <div className='absolute h-full w-full justify-center items-end hidden  lg:flex'>
@@ -45,7 +45,7 @@ export default function Hero() {
 
         
         {/* FLOW ELEMENTS */}
-        <div className="flex grow relative justify-center items-center lg:justify-end h-[361px]">
+        <div className="flex grow relative justify-center items-center lg:justify-end md:h-[450px] h-[330px]">
             <div id="hero-img-wrapper" className="absolute  lg:translate-x-1/3  lg:h-[1014px] lg:w-[1011px] md:w-[506px] md:h-[507px] w-[361px] h-[359px] -z-10">
                 <div id="hero-img" className='relative flex justify-center items-center h-full w-full'>
                     <Image src='/home/blueBgPoly.svg' height={418} width={418} className="h-[148px] w-[148px] md:h-[209px] md:w-[209px] lg:h-[418px] lg:w-[418px]" />

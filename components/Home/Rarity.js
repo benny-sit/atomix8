@@ -13,10 +13,11 @@ import styles from '@styles/Home/rarity.module.css'
 
 export default function Rarity() {
   return (
-    <section className='flex flex-col items-center relative md:mb-56 mb-20' id='rarity'>
+    <section className='flex flex-col items-center relative lg:mb-56 mb-20' id='rarity'>
       <OctasGrey className="absolute opacity-30 lg:opacity-100 md:bottom-0 left-0 translate-y-1/2 scale-50 xl:scale-100 hidden md:block"/>
       <OctasRed className="absolute opacity-30 lg:opacity-100 bottom-0 right-0 translate-y-1/2 translate-x-12 scale-50 xl:scale-100 hidden md:block"/>
-      <div className='home-title font-BebasNeue text-second-heavy mb-3 lg:mb-12'>
+      <Image src='/home/Rarity/bitsMobile.png' height={112} width={278} className="absolute -top-20 block lg:hidden"/> 
+      <div className='home-title font-BebasNeue relative text-second-heavy mb-3 lg:mb-12'>
         RARITIES
       </div>
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 mx-3 mb-4 md:mb-10'>

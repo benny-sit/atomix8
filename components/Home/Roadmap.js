@@ -1,5 +1,5 @@
 import React from 'react'
-import Bg from '@public/home/RoadmapBg.svg'
+import Bg from '@public/home/Roadmap/RoadmapBg.svg'
 import Octas7 from '@public/home/Polygons7Small.svg'
 import Image from 'next/image'
 
@@ -28,16 +28,16 @@ const goals = [
 
 export default function Roadmap() {
   return (
-    <section className='flex flex-col relative items-center mb-12 lg:mb-48' id='roadmap'>
-        {/* <Octas7 className='absolute right-0 bottom-0 translate-x-1/3 translate-y-full z-0'/> */}
+    <section className='flex flex-col relative items-center mb-12 lg:mb-56' id='roadmap'>
+        <Image src='/home/Roadmap/swordsMobile.png' width={239} height={73}  className="absolute -top-12 block lg:hidden"/>
         <div className='home-title font-BebasNeue text-second-heavy lg:mb-12'>
           ROADMAP
         </div>
         <div className='grid grid-cols-2 lg:grid-cols-4'>
         {
-          goals.map(goal => (
-            <div className='flex flex-col justify-center'>
-              <Image src='/home/RoadmapBg.svg' width={337} height={338} className="lg:w-[337px]  w-[158px] "/>
+          goals.map((goal, idx) => (
+            <div key={idx} className='flex flex-col justify-center'>
+              <Image src='/home/Roadmap/RoadmapBg.svg' width={337} height={338} className="lg:w-[337px]  w-[158px] "/>
               <div className='absolute self-center text-center'>
                 <div className='font-BebasNeue lg:text-[64px] text-2xl  lg:leading-[83px] text-second-lite  mb-1'>
                   {goal.title}

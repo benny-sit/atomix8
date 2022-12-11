@@ -10,6 +10,9 @@ import Image from 'next/image'
 export default function OurTeam() {
   return (
     <section className='flex flex-col items-center z-10 relative' id='team'>
+      <Image src='/home/Polygons7Small.svg' width={461} height={328} className="absolute hidden lg:block -right-32 -top-48"/>
+      <Image src='/home/Polygons7Small.svg' width={461} height={328} className="absolute hidden lg:block -left-72 bottom-24"/>
+      <Image src='/home/OurTeam/spearsMobile.png' width={222} height={93} className="absolute -top-12 block lg:hidden"/>
       <div className='home-title mb-6 lg:mb-12 font-BebasNeue text-second-heavy relative'>
         OUR TEAM
       </div>
