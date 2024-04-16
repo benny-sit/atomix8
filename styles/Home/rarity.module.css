@@ -1,0 +1,4 @@
+
+.svgIcon {
+    @apply h-[373px] w-[283px] xl:w-[283px] lg:w-[calc(0.75*283px)] md:w-[calc(0.5*283px)] xl:h-[373px] lg:h-[calc(0.75*373px)] md:h-[calc(0.5*373px)];
+}

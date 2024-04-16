@@ -1,0 +1,4 @@
+.link{
+    @apply font-BebasNeue font-normal leading-9 hover:brightness-90 text-second-heavy cursor-pointer;
+}
+
